@@ -1,7 +1,7 @@
-import { model, Schema } from 'mongoose';
+import { model, Schema, Types } from 'mongoose';
 
 export interface LeaderboardDocument {
-  team: string;
+  team: Types.ObjectId;
   totalPoints: number;
   rank: number;
   updatedAt: Date;

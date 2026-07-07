@@ -1,8 +1,8 @@
-import { model, Schema } from 'mongoose';
+import { model, Schema, Types } from 'mongoose';
 
 export interface ActivityDocument {
-  user: string;
-  team: string;
+  user: Types.ObjectId;
+  team: Types.ObjectId;
   type: string;
   durationMinutes: number;
   caloriesBurned: number;
